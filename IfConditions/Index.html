@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="para"></p>
+
+
+<h2>JavaScript else if</h2>
+
+<p>As per condition the value will be changed</p>
+
+<p id="demo"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  wishes = "Good day";
+} else {
+  wishes = "Good evening";
+}
+
+document.getElementById("para").innerHTML = wishes;
+
+
+
+
+
+let score = 75;
+
+if (score >= 90) {
+  document.getElementById("demo").innerHTML = "You got an A!";
+} else if (score >= 80) {
+  document.getElementById("demo").innerHTML = "You got a B!";
+} else if (score >= 70) {
+  document.getElementById("demo").innerHTML = "You got a C.";
+} else {
+  document.getElementById("demo").innerHTML = "You need to study harder.";
+}
+</script>
+
+</body>
+</html>
