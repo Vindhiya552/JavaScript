@@ -20,21 +20,21 @@
 
 
 <script>
-    //var
+     //var -old method / Not Block Scoped / Redeclare 
 var a = 4;
 var b = 10;
 var c = a + b;
 document.getElementById("demo").innerHTML = "The value of var is: " + c;
 
 
-//let
+//let- Block-scoped / can change the value
 
 let x = 5;
 let y = 6;
 let z = x + y;
 document.getElementById("letdemo").innerHTML = "The value of let is: " + z;
 
-//const
+//const- cannot be reassigned / Block-scoped
 const PI = 3.14159;
 //console.log(PI);
 document.getElementById("constdemo").innerHTML = "The value of cost is: " + PI;
@@ -43,4 +43,5 @@ document.getElementById("constdemo").innerHTML = "The value of cost is: " + PI;
 </script>
 
 </body>
+
 </html>
