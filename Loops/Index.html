@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //loop allows you to run a block of code multiple times — automatically
+    //for (initialization; condition; increment/decrement) {
+
+} -->
+
+
+ <h2>For Loop </h2>
+  <p id="demo"></p>
+
+   <h2>While Loop </h2>
+  <p id="whileOutput"></p>
+
+
+    <h2>Do...While Loop </h2>
+  <p id="doOutput"></p>
+
+<script>
+//Known number of iterations
+//runs untill Condition becomes false
+
+let result = "";
+    for (let i = 1; i <= 5; i++) {
+      result += "Number: " + i + "<br>";
+    }
+    document.getElementById("demo").innerHTML = result;
+
+
+    //Unknown number of times ,Condition becomes false
+
+ let i = 1;
+    let text = "";
+    while (i <= 5) {
+      text += "Count: " + i + "<br>";
+      i++;
+    }
+    document.getElementById("whileOutput").innerHTML = text;
+
+
+//runs the code at least once
+let I = 1;
+    let text1 = "";
+    do {
+      text1 += "Number: " + I + "<br>";
+      i++;
+    } while (i <= 5);
+
+    document.getElementById("doOutput").innerHTML = text1;
+    </script>
+</body>
+</html>

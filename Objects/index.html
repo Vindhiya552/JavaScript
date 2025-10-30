@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Object </title>
+</head>
+<body>
+  <h2>JavaScript Object</h2>
+  <p id="output"></p>
+
+  <script>
+
+    // collection of properties / have key and values
+    // 1Create an object
+    let car = {
+      brand: "Toyota",
+      model: "Innova",
+      color: "Red",
+      year: 2022,
+
+      // Object method (function inside object)
+      start: function() {
+        return "The car has started!";
+      }
+    };
+
+    // 2️ Access object properties
+    //building a multi-line text by adding information step by step
+    let result = "";
+    result += "Brand: " + car.brand + "<br>";
+    result += "Model: " + car.model + "<br>";
+    result += "Color: " + car.color + "<br>";
+    result += "Year: " + car.year + "<br><br>";
+
+    // 3️ Call object method
+    result += car.start();
+
+    // 4️ Display result
+    document.getElementById("output").innerHTML = result;
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Arrays</h2>
+
+<p id="demo"></p>
+
+<h2> Array Sort</h2>
+<p>Sort the array in ascending order:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<h2>Array Iteration </h2>
+  <p id="output"></p>
+
+<script>
+
+//special variable that can store multiple values
+const name = ["pravin", "Mani", "priya"];
+document.getElementById("demo").innerHTML = name;
+
+//particular order —
+// either ascending (A–Z, 0–9) or descending (Z–A, 9–0)
+
+const number = [50,30,54,35,26,90];
+document.getElementById("demo1").innerHTML = number;  
+
+number.sort(function(a, b){return a - b});
+document.getElementById("demo2").innerHTML = number;
+
+
+// looping through each element of an array-Array iteration
+ // Create an array
+    let fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+    // Variable to store result text
+    let result = "";
+
+    // 1 Using a for loop /Initialize /condition/Iteration
+    result += "<b>Using for loop:</b><br>";
+    for (let i = 0; i < fruits.length; i++) {
+      result += fruits[i] + "<br>";
+    }
+
+     // Display all results inside <p> tag
+    document.getElementById("output").innerHTML = result;
+</script>
+
+</body>
+</html>

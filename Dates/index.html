@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Date </title>
+</head>
+<body>
+  <h2>JavaScript Date </h2>
+  <p id="output"></p>
+
+  <script>
+    // 1️ Create a Date object (current date & time)
+     let currentDate = new Date();
+
+    // 2️ Get parts of the date
+    let year = currentDate.getFullYear();
+    let month = currentDate.getMonth() + 1; // (0 = January, so add 1)
+    let day = currentDate.getDate();
+    let hours = currentDate.getHours();
+    let minutes = currentDate.getMinutes();
+    let seconds = currentDate.getSeconds();
+
+    // 3️ Format output
+    let result = "";
+    result += "Current Date and Time: " + currentDate + "<br><br>";
+    result += "Year: " + year + "<br>";
+    result += "Month: " + month + "<br>";
+    result += "Day: " + day + "<br>";
+    result += "Time: " + hours + ":" + minutes + ":" + seconds + "<br>";
+
+    // 4️ Display result
+    document.getElementById("output").innerHTML = result;
+  </script>
+</body>
+</html>

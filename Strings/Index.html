@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>	
+
+  <h2>JavaScript String </h2>
+  <p id="output"></p>
+
+<script>
+ let firstName = "Dhiya";
+    let lastName = "Vindia";
+    
+    // 1️String Concatenation (Join)
+    let fullName = firstName + " " + lastName;
+
+    // 2️ Template Literal (Easier way)
+    let greeting = `Hello ${firstName} ${lastName}, welcome to JavaScript`;
+
+    // Display result
+    let result = "";
+    // result += "Using  : " + fullName + "<br>";
+     result += "Template String : " + greeting + "<br>";
+
+    document.getElementById("output").innerHTML = result;
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Function </title>
+</head>
+<body>
+  <h2>JavaScript Function </h2>
+  <p id="output"></p>
+
+  <script>
+
+   //     function → keyword
+
+  // functionName → name you give the function
+
+  // (parameters) → input values (optional)
+
+  // { } → block of code to execute
+    // 1️Define a function
+    function showFruits() {
+      let fruits = ["Apple", "Banana", "Mango", "Orange"];
+      let result = "";
+
+      for (let i = 0; i < fruits.length; i++) {
+        result += "Fruit " + (i + 1) + ": " + fruits[i] + "<br>";
+      }
+
+      document.getElementById("output").innerHTML = result;
+    }
+
+    // 2️ Call the function
+    showFruits();
+  </script>
+</body>
+</html>
